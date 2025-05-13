@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ArrowRight } from "lucide-vue-next";
 import { HEADER_TEAM } from "~/assets/constants/header";
+import { Badge } from "~/components/ui/badge";
 </script>
 
 <template>
@@ -22,9 +23,12 @@ import { HEADER_TEAM } from "~/assets/constants/header";
           <div class="text-sm text-muted-foreground">
             {{ team.function }}
           </div>
-          <div class="text-sm text-muted-foreground">
+          <Badge>
             {{ team.position }}
-          </div>
+          </Badge>
+          <!-- <div class="text-sm text-muted-foreground">
+            {{ team.position }}
+          </div> -->
         </div>
       </CardContent>
       <CardFooter>
